@@ -1,0 +1,37 @@
+---
+- name: Provision the new system with our standards
+  hosts: "{{ HOSTS | default ('all') }}"
+  gather_facts: False
+
+  vars:
+     my_custom_var: NewVarName
+     - piece1: Piece one
+       relevance: minimal
+     - piece2: Piece two
+       relevance: medium
+     - piece3: Piece three
+       relevance: extreme
+
+  tasks:
+
+  - name debug the vars
+    debug:
+      var: my_custom_var
+
+#  - name: custom facts dir
+#    file:
+#      path: /etc/ansible/facts.d/
+#      state: directory
+#      mode: '0755'
+
+#  - name: custom facts to path
+#    copy:
+#      content: {{ my_custom_var }}
+#      dest: /etc/ansible/facts.d/newvar.fact
+#      owner: root
+#      group: root
+#      mode: 0644
+#
+#  - name: "Re-run setup to use custom facts"
+#    setup: ~
+
