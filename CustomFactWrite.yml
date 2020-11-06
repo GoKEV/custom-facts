@@ -4,13 +4,13 @@
   gather_facts: False
 
   vars:
-     my_custom_var: NewVarName
-     - piece1: Piece one
-       relevance: minimal
-     - piece2: Piece two
-       relevance: medium
-     - piece3: Piece three
-       relevance: extreme
+     - my_custom_var: NewVarName
+       - piece1: Piece one
+         relevance: minimal
+       - piece2: Piece two
+         relevance: medium
+       - piece3: Piece three
+         relevance: extreme
 
   tasks:
 
