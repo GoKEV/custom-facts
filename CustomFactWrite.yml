@@ -7,57 +7,13 @@
     gokev_custom_vars:
       - days:
         - today:
-          - shopping:
-            - costco:
-                - product: salsa
-                  size: gallon
-                  quantity: 3
-                - product: gasoline
-                  size: gallons
-                  quantity: fill
-                - product: organic tortilla chips
-                  quantity: 17 bags
-                - product: Charleston Organic Coffee
-                  size: 2lb bag
-                  quantity: 4
-            - walmart:
-              - no_trip_needed
-          - to_do:
-            - skoolie:
-              - interior:
-                - 'remove seats'
-              - wiring:
-                - 'install backup cameras'
-                - 'install automatic starter'
-                - 'modify door switch for remote'
-              - trailer:
-                - 'run trailer light wires to rear'
-                - 'install 7 pin round plug in rear'
-              - paint_and_body:
-                - 'apply rust converter'
-                - 'stage generator for fitment'
+          - 'no plans'
         - tomorrow:
-          - to_do:
-            - skoolie:
-              - interior:
-                - 'remove remaining roof panels'
-              - wiring:
-                - 'program remote starter for disel delay'
-              - trailer:
-                - 'install trailer hitch'
-              - paint_and_body:
-                - 'remove adhesive'
-                - 'wire wheel rough-up'
+          - 'no plans'
         - nextweek:
-          - to_do:
-            - skoolie:
-              - interior:
-                - 'clean out all tools and trash'
-              - wiring:
-                - 'wrap interior wires out of the way'
-              - paint_and_body:
-                - 'mount backup camera'
-                - 'stage and evaluate locations for side cameras'
+          - 'no plans'
+      - shopping:
+        - 'no plans'
 
 
   tasks:
