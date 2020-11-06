@@ -18,11 +18,11 @@
     debug:
       var: my_custom_var
 
-#  - name: custom facts dir
-#    file:
-#      path: /etc/ansible/facts.d/
-#      state: directory
-#      mode: '0755'
+  - name: custom facts dir
+    file:
+      path: /etc/ansible/facts.d/
+      state: directory
+      mode: '0755'
 
 #  - name: custom facts to path
 #    copy:
