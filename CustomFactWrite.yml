@@ -33,5 +33,5 @@
       mode: 0644
 
   - name: "Re-run setup to use custom facts"
-    setup: ~
+    setup: *
 
