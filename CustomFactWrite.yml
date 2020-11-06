@@ -13,7 +13,7 @@
 
   tasks:
 
-  - name debug the vars
+  - name: debug the vars
     debug:
       var: my_custom_var
 
