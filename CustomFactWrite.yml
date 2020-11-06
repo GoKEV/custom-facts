@@ -20,7 +20,7 @@
 
   - name: debug the name
     debug:
-      var: my_custom_var.0
+      var: my_custom_var.0.0
 
   - name: custom facts dir
     file:
