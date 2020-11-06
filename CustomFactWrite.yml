@@ -18,6 +18,10 @@
     debug:
       var: my_custom_var
 
+  - name: debug the name
+    debug:
+      var: my_custom_var.0
+
   - name: custom facts dir
     file:
       path: /etc/ansible/facts.d/
