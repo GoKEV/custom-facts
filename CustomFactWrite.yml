@@ -4,7 +4,7 @@
   gather_facts: False
 
   vars:
-  - my_custom_var:
+  - gokev_custom_vars:
     - piece1: Piece one
       relevance: minimal
     - piece2: Piece two
@@ -16,11 +16,7 @@
 
   - name: debug the vars
     debug:
-      var: my_custom_var
-
-  - name: debug the name
-    debug:
-      var: my_custom_var.0.0
+      var: gokev_custom_vars
 
   - name: custom facts dir
     file:
@@ -28,14 +24,14 @@
       state: directory
       mode: '0755'
 
-#  - name: custom facts to path
-#    copy:
-#      content: {{ my_custom_var }}
-#      dest: /etc/ansible/facts.d/newvar.fact
-#      owner: root
-#      group: root
-#      mode: 0644
-#
-#  - name: "Re-run setup to use custom facts"
-#    setup: ~
+  - name: custom facts to path
+    copy:
+      content: "{{ gokev_custom_vars | to_json }}"
+      dest: /etc/ansible/facts.d/gokev_custom_vars.fact
+      owner: root
+      group: root
+      mode: 0644
+
+  - name: "Re-run setup to use custom facts"
+    setup: ~
 
