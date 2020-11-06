@@ -37,5 +37,6 @@
       mode: 0644
 
   - name: "Re-run setup to use custom facts"
-    setup
+    setup:
+      gather_timeout: 10
 
