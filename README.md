@@ -7,3 +7,7 @@ This Ansible playbook will lay down custom facts to be read later in a `setup` f
   - Additional vars.yml file to be imported at runtime, demonstrating a deeply nested YAML structure
   
 > This set of files will serve as a starter template to add custom facts to a system *with* Ansible that will also be readable *by* Ansible
+
+# Deployment with included additional vars:
+<pre>ansible-playbook custom-facts.yml -e "@vars.yml"</pre>
+
